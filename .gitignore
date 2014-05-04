@@ -1,0 +1,8 @@
+bin/
+cocos2d/
+proj.linux/
+proj.win32/
+proj.wp8-xaml/
+proj.android/bin
+proj.android/gen
+proj.android/obj
