@@ -78,6 +78,12 @@
 		FE44B13319165D760072AB96 /* Trump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE44B12819165D760072AB96 /* Trump.cpp */; };
 		FE44B13419165D760072AB96 /* TrumpData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE44B12A19165D760072AB96 /* TrumpData.cpp */; };
 		FE44B13519165D760072AB96 /* TrumpModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE44B12C19165D760072AB96 /* TrumpModel.cpp */; };
+		FE44B142191668550072AB96 /* libNendAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE44B13C191668550072AB96 /* libNendAd.a */; };
+		FE44B143191668550072AB96 /* NADView_readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = FE44B141191668550072AB96 /* NADView_readme.txt */; };
+		FE44B145191668B70072AB96 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE44B144191668B70072AB96 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FE44B147191668C30072AB96 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE44B146191668C30072AB96 /* Security.framework */; };
+		FE44B15119166A310072AB96 /* NendIconModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE44B14F19166A310072AB96 /* NendIconModule.mm */; };
+		FE44B15219166A310072AB96 /* NendModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE44B15019166A310072AB96 /* NendModule.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -295,6 +301,20 @@
 		FE44B12B19165D760072AB96 /* TrumpData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrumpData.h; sourceTree = "<group>"; };
 		FE44B12C19165D760072AB96 /* TrumpModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrumpModel.cpp; sourceTree = "<group>"; };
 		FE44B12D19165D760072AB96 /* TrumpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrumpModel.h; sourceTree = "<group>"; };
+		FE44B13C191668550072AB96 /* libNendAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNendAd.a; sourceTree = "<group>"; };
+		FE44B13D191668550072AB96 /* NADIconArrayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADIconArrayView.h; sourceTree = "<group>"; };
+		FE44B13E191668550072AB96 /* NADIconLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADIconLoader.h; sourceTree = "<group>"; };
+		FE44B13F191668550072AB96 /* NADIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADIconView.h; sourceTree = "<group>"; };
+		FE44B140191668550072AB96 /* NADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADView.h; sourceTree = "<group>"; };
+		FE44B141191668550072AB96 /* NADView_readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NADView_readme.txt; sourceTree = "<group>"; };
+		FE44B144191668B70072AB96 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
+		FE44B146191668C30072AB96 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		FE44B148191669EB0072AB96 /* NendIconModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NendIconModule.h; sourceTree = "<group>"; };
+		FE44B149191669EB0072AB96 /* NendModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NendModule.h; sourceTree = "<group>"; };
+		FE44B14F19166A310072AB96 /* NendIconModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NendIconModule.mm; path = ios/NendIconModule.mm; sourceTree = SOURCE_ROOT; };
+		FE44B15019166A310072AB96 /* NendModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NendModule.mm; path = ios/NendModule.mm; sourceTree = SOURCE_ROOT; };
+		FE44B15319166E170072AB96 /* NendIconModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NendIconModule.cpp; sourceTree = "<group>"; };
+		FE44B15419166E170072AB96 /* NendModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NendModule.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +322,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE44B147191668C30072AB96 /* Security.framework in Frameworks */,
+				FE44B145191668B70072AB96 /* AdSupport.framework in Frameworks */,
 				1AC6FB2E180E99EB004C840B /* libbox2d iOS.a in Frameworks */,
 				1AC6FB2F180E99EB004C840B /* libchipmunk iOS.a in Frameworks */,
 				1AC6FB30180E99EB004C840B /* libcocos2dx iOS.a in Frameworks */,
@@ -313,6 +335,7 @@
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */,
 				BF1712471292920000B8313A /* libz.dylib in Frameworks */,
+				FE44B142191668550072AB96 /* libNendAd.a in Frameworks */,
 				BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */,
 				D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */,
 				D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */,
@@ -349,6 +372,8 @@
 		080E96DDFE201D6D7F000001 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				FE44B14F19166A310072AB96 /* NendIconModule.mm */,
+				FE44B15019166A310072AB96 /* NendModule.mm */,
 				5087E77117EB970100C73F5D /* Icons */,
 				503AE0FA17EB989F00D1A890 /* AppController.h */,
 				503AE0FB17EB989F00D1A890 /* AppController.mm */,
@@ -364,6 +389,7 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FE44B14A191669EE0072AB96 /* Nend */,
 				FE44B13619165D950072AB96 /* ViewParts */,
 				FE44B13719165DB40072AB96 /* Scenes */,
 				FE44B13819165DBD0072AB96 /* ViewModels */,
@@ -405,6 +431,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				FE44B13B191668550072AB96 /* NendAd */,
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
 				15AA9C4015B7EC450033D6C2 /* Classes */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -419,6 +446,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FE44B146191668C30072AB96 /* Security.framework */,
+				FE44B144191668B70072AB96 /* AdSupport.framework */,
 				D6B0611A1803AB670077942B /* CoreMotion.framework */,
 				503AE11A17EB9C5A00D1A890 /* IOKit.framework */,
 				503AE11117EB99EE00D1A890 /* libcurl.dylib */,
@@ -548,6 +577,30 @@
 				FE44B12B19165D760072AB96 /* TrumpData.h */,
 			);
 			name = Datas;
+			sourceTree = "<group>";
+		};
+		FE44B13B191668550072AB96 /* NendAd */ = {
+			isa = PBXGroup;
+			children = (
+				FE44B13C191668550072AB96 /* libNendAd.a */,
+				FE44B13D191668550072AB96 /* NADIconArrayView.h */,
+				FE44B13E191668550072AB96 /* NADIconLoader.h */,
+				FE44B13F191668550072AB96 /* NADIconView.h */,
+				FE44B140191668550072AB96 /* NADView.h */,
+				FE44B141191668550072AB96 /* NADView_readme.txt */,
+			);
+			path = NendAd;
+			sourceTree = "<group>";
+		};
+		FE44B14A191669EE0072AB96 /* Nend */ = {
+			isa = PBXGroup;
+			children = (
+				FE44B15319166E170072AB96 /* NendIconModule.cpp */,
+				FE44B15419166E170072AB96 /* NendModule.cpp */,
+				FE44B148191669EB0072AB96 /* NendIconModule.h */,
+				FE44B149191669EB0072AB96 /* NendModule.h */,
+			);
+			name = Nend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -719,6 +772,7 @@
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
+				FE44B143191668550072AB96 /* NADView_readme.txt in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
@@ -758,8 +812,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE44B13019165D760072AB96 /* SolitaireKlondikeViewModel.cpp in Sources */,
+				FE44B15119166A310072AB96 /* NendIconModule.mm in Sources */,
 				FE44B13519165D760072AB96 /* TrumpModel.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				FE44B15219166A310072AB96 /* NendModule.mm in Sources */,
 				FE44B13119165D760072AB96 /* TitleScene.cpp in Sources */,
 				FE44B13319165D760072AB96 /* Trump.cpp in Sources */,
 				FE44B13419165D760072AB96 /* TrumpData.cpp in Sources */,
@@ -861,7 +917,7 @@
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/NendAd";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -890,7 +946,7 @@
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/NendAd";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";

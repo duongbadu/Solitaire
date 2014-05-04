@@ -15,7 +15,9 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
 ../../Classes/Trump.cpp \
 ../../Classes/TrumpData.cpp \
 ../../Classes/TrumpModel.cpp \
-../../Classes/AppDelegate.cpp
+../../Classes/AppDelegate.cpp \
+../../Classes/NendIconModule.cpp \
+../../Classes/NendModule.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 

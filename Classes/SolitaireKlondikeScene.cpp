@@ -4,8 +4,8 @@
 #include "TrumpData.h"
 #include "TrumpModel.h"
 #include "SolitaireKlondikeViewModel.h"
-//#include "NendModule.h"
-//#include "NendIconModule.h"
+#include "NendModule.h"
+#include "NendIconModule.h"
 
 USING_NS_CC;
 
@@ -172,19 +172,21 @@ bool SolitaireKlondikeScene::init() {
     this->getEventDispatcher()->addEventListenerWithFixedPriority(listener, 100);
 
     // Nend広告
-    /*
-    char apiKey[] = "2cf8ac6a0e0a103324422286335cc29c48a110d7";
-    char spotID[] = "140708";
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    NendModule::release();
+    char apiKey[] = "a2b89ce0d49d750944afb9f6592ccb744c442895";
+    char spotID[] = "170970";
     NendModule::createNADViewTop(apiKey, spotID);
 
-    char iconApiKey[] = "ddec5c41b857c8a804b1ee46c493c32e8c044be5";
-    char iconSpotID[] = "143186";
-    NendIconModule::createNADIconLoader(iconApiKey, iconSpotID);
-    NendIconModule::createNADIconView(ccp(200, 170));
-    NendIconModule::createNADIconView(ccp(350, 170));
-    NendIconModule::createNADIconView(ccp(500, 170));
-    NendIconModule::load();
-    */
+    NendIconModule::release();
+#else
+    NendModule::release();
+    char apiKey[] = "34696dee2eba01cf76721d67d61c1a3289785d12";
+    char spotID[] = "170968";
+    NendModule::createNADViewTop(apiKey, spotID);
+    
+    NendIconModule::release();
+#endif
 
     return true;
 }

@@ -5,8 +5,8 @@
 #include "TitleViewModel.h"
 #include "SolitaireKlondikeScene.h"
 #include "SolitaireKlondikeViewModel.h"
-//#include "NendModule.h"
-//#include "NendIconModule.h"
+#include "NendModule.h"
+#include "NendIconModule.h"
 
 USING_NS_CC;
 
@@ -91,18 +91,32 @@ bool TitleScene::init() {
     this->addChild(spBatch, 0);
 */
 
-    /*
     // Nend広告
-    char apiKey[] = "2cf8ac6a0e0a103324422286335cc29c48a110d7";
-    char spotID[] = "140708";
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    NendModule::release();
+    char apiKey[] = "a2b89ce0d49d750944afb9f6592ccb744c442895";
+    char spotID[] = "170970";
     NendModule::createNADViewBottom(apiKey, spotID);
-
-    char iconApiKey[] = "ddec5c41b857c8a804b1ee46c493c32e8c044be5";
-    char iconSpotID[] = "143186";
+    
+    NendIconModule::release();
+    char iconApiKey[] = "acc528996a85519f6005f63d8f090ec3a2bd0a00";
+    char iconSpotID[] = "170971";
     NendIconModule::createNADIconLoader(iconApiKey, iconSpotID);
     NendIconModule::createNADIconViewTop();
     NendIconModule::load();
-    */
+#else
+    NendModule::release();
+    char apiKey[] = "34696dee2eba01cf76721d67d61c1a3289785d12";
+    char spotID[] = "170968";
+    NendModule::createNADViewBottom(apiKey, spotID);
+
+    NendIconModule::release();
+    char iconApiKey[] = "ea780a50914cfa3b54814fb3970314ec2dc173cd";
+    char iconSpotID[] = "170969";
+    NendIconModule::createNADIconLoader(iconApiKey, iconSpotID);
+    NendIconModule::createNADIconViewTop();
+    NendIconModule::load();
+#endif
 
     // タッチイベント系
     // イベントリスナー作成
